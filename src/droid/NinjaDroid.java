@@ -33,11 +33,11 @@ public class NinjaDroid extends Droid {
                 "-----------------------",
                 getClass().getSimpleName(),
                 "Name: " + name,
-                "░░░░▄██▄░░░░    Health: " + this.health,
-                "░░▄██████▄░░    Base Damage: " + this.damage,
-                "░███▄██▄███░    Evasion: " + this.evasion,
-                "░░░▄▀▄▄▀▄░░░",
-                "░░▀░▀░░▀░▀░░",
+                "    ▄██▄        Health: " + this.health,
+                "  ▄██████▄      Base Damage: " + this.damage,
+                " ███▄██▄███     Evasion: " + this.evasion,
+                "   ▄▀▄▄▀▄   ",
+                "  ▀ ▀  ▀ ▀  ",
                 "-----------------------"
         };
 

@@ -41,11 +41,11 @@ public class FrostDroid extends Droid {
                 "-----------------------",
                 getClass().getSimpleName(),
                 "Name: " + name,
-                "░░▄▄████▄▄░░",
-                "░██████████░    Health: " + this.health,
-                "░██▄▄██▄▄██░    Base Damage: " + this.damage,
-                "░░▄▀▄▀▀▄▀▄░░    Shield: " + this.shield,
-                "░▀░░░░░░░░▀░",
+                "  ▄▄████▄▄  ",
+                " ██████████     Health: " + this.health,
+                " ██▄▄██▄▄██     Base Damage: " + this.damage,
+                "  ▄▀▄▀▀▄▀▄      Shield: " + this.shield,
+                " ▀        ▀ ",
                 "-----------------------"
         };
 

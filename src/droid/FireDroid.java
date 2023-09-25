@@ -42,12 +42,12 @@ public class FireDroid extends Droid {
                 "-----------------------",
                 getClass().getSimpleName(),
                 "Name: " + name,
-                "░░░░░░░░░░░░░    Health: " + this.health,
-                "░░░▀▄░░░▄▀░░░    Base Damage: " + this.damage,
-                "░░▄█▀███▀█▄░░    Armor: " + this.armor,
-                "░█▀███████▀█░",
-                "░█░█▀▀▀▀▀█░█░",
-                "░░░░▀▀░▀▀░░░░",
+                "                 Health: " + this.health,
+                "   ▀▄   ▄▀       Base Damage: " + this.damage,
+                "  ▄█▀███▀█▄      Armor: " + this.armor,
+                " █▀███████▀█ ",
+                " █ █▀▀▀▀▀█ █ ",
+                "    ▀▀ ▀▀    ",
                 "-----------------------"
         };
 
