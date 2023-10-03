@@ -39,16 +39,17 @@ public class FireDroid extends Droid {
     @Override
     public void visualize() {
         String[] visualization = {
-                "-----------------------",
+                // Використовую ANSI коди для зміни кольору тексту
+                "-----------------------\u001B[38;5;208m", // Переключаю на оранжевий колір
                 getClass().getSimpleName(),
                 "Name: " + name,
-                "                 Health: " + this.health,
+                "   \uD808\uDE19       Health: " + this.health,
                 "   ▀▄   ▄▀       Base Damage: " + this.damage,
                 "  ▄█▀███▀█▄      Armor: " + this.armor,
                 " █▀███████▀█ ",
-                " █ █▀▀▀▀▀█ █ ",
+                " █ █▀▀▀▀▀█ █ \uD83D\uDD25",
                 "    ▀▀ ▀▀    ",
-                "-----------------------"
+                "\u001B[39m-----------------------"       // Переключаю на стандартний колір
         };
 
         for (String line : visualization) SaveFight.log(line);

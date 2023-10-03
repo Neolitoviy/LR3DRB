@@ -39,12 +39,12 @@ public class TeamArena {
      * Виводить інформацію про команди дроїдів на консоль.
      */
     private void visualizeTeams() {
-        System.out.println("Blue Team:");
+        SaveFight.log("Blue Team:");
         for (Droid blueDroid : blueDroids) {
             blueDroid.visualize();
         }
 
-        System.out.println("Red Team:");
+        SaveFight.log("Red Team:");
         for (Droid redDroid : redDroids) {
             redDroid.visualize();
         }

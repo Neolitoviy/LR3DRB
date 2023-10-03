@@ -30,15 +30,16 @@ public class NinjaDroid extends Droid {
     @Override
     public void visualize() {
         String[] visualization = {
-                "-----------------------",
+                //Використовую ANSI коди для зміни кольору тексту
+                "-----------------------\u001B[38;5;90m", // Переключаю на фіолетовий колір
                 getClass().getSimpleName(),
                 "Name: " + name,
                 "    ▄██▄        Health: " + this.health,
                 "  ▄██████▄      Base Damage: " + this.damage,
                 " ███▄██▄███     Evasion: " + this.evasion,
-                "   ▄▀▄▄▀▄   ",
+                "   ▄▀▄▄▀▄   ▬▬ι═══════ﺤ",
                 "  ▀ ▀  ▀ ▀  ",
-                "-----------------------"
+                "\u001B[39m-----------------------"
         };
 
         for (String line : visualization) SaveFight.log(line);

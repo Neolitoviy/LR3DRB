@@ -38,15 +38,18 @@ public class FrostDroid extends Droid {
     @Override
     public void visualize() {
         String[] visualization = {
-                "-----------------------",
+                //Використовую ANSI коди для зміни кольору тексту
+                "-----------------------\u001B[38;5;195m", // Переключаю на світло-синій колір
                 getClass().getSimpleName(),
                 "Name: " + name,
-                "  ▄▄████▄▄  ",
-                " ██████████     Health: " + this.health,
-                " ██▄▄██▄▄██     Base Damage: " + this.damage,
-                "  ▄▀▄▀▀▄▀▄      Shield: " + this.shield,
-                " ▀        ▀ ",
-                "-----------------------"
+                " ❄❄❄❄❄❄❄❄ ",
+                "❄  ▄▄████▄▄  ❄",
+                "❄ ██████████ ❄   Health: " + this.health,
+                "❄ ██▄▄██▄▄██ ❄   Base Damage: " + this.damage,
+                "❄  ▄▀▄▀▀▄▀▄  ❄   Shield: " + this.shield,
+                "❄ ▀        ▀ ❄",
+                " ❄❄❄❄❄❄❄❄ ",
+                "\u001B[39m-----------------------"
         };
 
         for (String line : visualization) SaveFight.log(line);
